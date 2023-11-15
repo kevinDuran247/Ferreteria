@@ -1,0 +1,28 @@
+Para configurar las notificaciones del stock con los correos de tu empresa
+debes hacer lo siguiente:
+
+1- Modificar el siguiente archivo:Ferreteria\src\main\java\servlets\facturaServ.java
+			       en la linea 186 debes poner el correo que enviara las
+			       notificaciones:mailProperties.put("mail.smtp.user", "correo@outlook.com");
+			       en la linea 187 debes poner la contraseña del correo de arriba:
+			       mailProperties.put("mail.smtp.password", "Contraseña");
+			       finalmente en la linea 201 debes poner el correo general que recibira
+			       las notificaciones: m.enviarEmail(subject, message, "correo@gmail.com");
+
+2- Modificar el siguiente archivo:Ferreteria\src\main\java\servlets\agregarProductoServ.java
+			       en la linea 133 debes poner el correo que enviara las
+			       notificaciones:mailProperties.put("mail.smtp.user", "correo@outlook.com");
+			       en la linea 134 debes poner la contraseña del correo de arriba:
+			       mailProperties.put("mail.smtp.password", "Contraseña");
+			       finalmente en la linea 142 debes poner el correo general que recibira
+			       las notificaciones: m.enviarEmail(subject, message, "correo@gmail.com");
+
+3- Modificar el siguiente archivo:Ferreteria\src\main\java\servlets\productosServ.java
+			       en la linea 253 debes poner el correo que enviara las
+			       notificaciones:mailProperties.put("mail.smtp.user", "correo@outlook.com");
+			       en la linea 254 debes poner la contraseña del correo de arriba:
+			       mailProperties.put("mail.smtp.password", "Contraseña");
+			       finalmente en la linea 261 debes poner el correo general que recibira
+			       las notificaciones: m.enviarEmail(subject, message, "correo@gmail.com");
+
+NOTA: EL CORREO QUE ENVIA LAS NOTIFICACIONES DEBE SER OUTLOOK Y EL QUE LAS RECIBE PUEDE SER DE CUALQUIER TIPO.
